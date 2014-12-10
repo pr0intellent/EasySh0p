@@ -7,8 +7,12 @@ package easysh0p;
 
 /**
  *
- * @author Patrick
+ * @author Patrick \ Michel \ Dennis \ Lucas \ Martin
  */
+
+import javax.swing.*;
+
+
 public class EasySh0p {
 
     /**
@@ -16,6 +20,7 @@ public class EasySh0p {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        System.out.println("Hallo");
     }
     
 }
