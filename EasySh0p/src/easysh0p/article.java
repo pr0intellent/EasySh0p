@@ -9,7 +9,6 @@ package easysh0p;
  *
  * @author Michel
  */
-import java.util.*;
 public class article implements Comparable<article>{
     private double number=0;
     private String name=" ";
@@ -20,6 +19,7 @@ public class article implements Comparable<article>{
     public int compareTo(article otherArticle)
     {
         return this.name.compareTo(otherArticle.getName());
+        
     }
     public void setNumber(double num)
     {
