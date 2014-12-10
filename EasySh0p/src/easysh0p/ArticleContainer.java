@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class addArticle {
+public class ArticleContainer {
     List<article> articles = new ArrayList<article>();
     public void addArticlesToList(double Number, String Name, boolean Done, double Priceper, double Price)
     {
@@ -31,5 +31,3 @@ public class addArticle {
         Collections.sort(articles);
     }     
 }
-    
-
