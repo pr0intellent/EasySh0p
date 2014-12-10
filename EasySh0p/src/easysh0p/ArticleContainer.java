@@ -13,24 +13,21 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class addArticle {
-    
+public class ArticleContainer {
+    List<article> articles = new ArrayList<article>();
     public void addArticlesToList(double Number, String Name, boolean Done, double Priceper, double Price)
     {
-        article artikel = new article();
-        artikel.setNumber(Number);
-        artikel.setName(Name);
-        artikel.setDone(Done);
-        artikel.setPriceper(Priceper);
-        artikel.setPrice(Price);
-        List<article> artikels = new ArrayList<article>();
-        artikels.add (artikel);
+        article newarticle = new article();
+        newarticle.setNumber(Number);
+        newarticle.setName(Name);
+        newarticle.setDone(Done);
+        newarticle.setPriceper(Priceper);
+        newarticle.setPrice(Price);
+        articles.add (newarticle);
       
     }
-    public void sortArticleList(List artikels)
+    public void sortArticleList()
     {
-        Collections.sort(artikels);
+        Collections.sort(articles);
     }     
 }
-    
-

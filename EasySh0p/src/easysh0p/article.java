@@ -9,13 +9,18 @@ package easysh0p;
  *
  * @author Michel
  */
-public class article {
+public class article implements Comparable<article>{
     private double number=0;
     private String name=" ";
     private boolean done=false;
     private double priceper= 0;
     private double price=0;
-    
+    @Override
+    public int compareTo(article otherArticle)
+    {
+        return this.name.compareTo(otherArticle.getName());
+        
+    }
     public void setNumber(double num)
     {
         number=num;
