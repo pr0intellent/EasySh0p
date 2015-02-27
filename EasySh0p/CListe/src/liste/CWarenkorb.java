@@ -6,8 +6,10 @@
 
 package liste;
 
+import java.io.IOException;
 import liste.CArticel;
 import java.util.ArrayList;
+
 
 /**
  *
@@ -65,4 +67,27 @@ public class CWarenkorb {
         System.out.println("Gesamtpreis Einkauf:\t" + summe); 
         System.out.println("");
     }
-}
+     public void saveliste()
+    {
+        String file = CInput.readText("Name der zuspeichernden Datei: ");
+        float zsumme = 0;
+        float summe = 0;
+        CSave newsave = new CSave();
+        for (int i = 0; i < liste.size(); i++)
+        {
+            CArticel a = liste.get(i);
+            zsumme = a.getPrice() * a.getCount();
+            int pos= i+1;
+            String desc = a.getDescription();
+            float price = a.getPrice();
+            int count = a.getCount();
+            
+            
+            newsave.Save(file,pos,desc,price,count,zsumme);
+        }
+       
+    }
+    
+ 
+  }
+

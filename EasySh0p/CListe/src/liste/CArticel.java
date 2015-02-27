@@ -15,6 +15,8 @@ public class CArticel {
     private float price;
     private int Count;
    
+    
+  
    
     public CArticel(String description)
     {
